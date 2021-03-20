@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('scripts_top')
+    <script type="text/javascript" src="{{ asset("js/app.js") }}"></script>
+@endpush
+
 @section('body_content')
     <!-- Begin Hero Content -->
     <div class="hero-content">
