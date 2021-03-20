@@ -27,11 +27,16 @@
             </div>
             <div class="col-sm-2">
                 <h3>Address</h3>
-                ewfwefqfeq
+                Unit 14 Lorem Ipsum<br>
+                Lorem Ipsum Avenue<br>
+                Lorem Ipsum Park<br>
+                Lorem Ipsum, LI7 1PS
             </div>
             <div class="col-sm-4">
-                Call Manchester<br>
-                Call London<br>
+                <b>Manchester</b><br>
+                0116 232252<br>
+                <b>London</b><br>
+                0121 21323124<br>
                 Twitter
             </div>
         </div>

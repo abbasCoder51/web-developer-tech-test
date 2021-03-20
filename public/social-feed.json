@@ -4,29 +4,29 @@
       "name" : "OneAgency",
       "tag_name" : "@oneagency",
       "date" : "6 March 2021",
-      "description" : "This is some test information, we hope you have",
-      "icon" : "/images/twitter-icon.jpg"
+      "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "icon" : "/images/logo-white-1.png"
     },
     {
       "name" : "OneAgency",
       "tag_name" : "@oneagency",
       "date" : "11 March 2021",
-      "description" : "This is some test information, we hope you have",
-      "icon" : "/images/twitter-icon.jpg"
+      "description" : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "icon" : "/images/logo-white-1.png"
     },
     {
       "name" : "OneAgency",
       "tag_name" : "@oneagency",
       "date" : "15 March 2021",
-      "description" : "This is some test information, we hope you have",
-      "icon" : "/images/twitter-icon.jpg"
+      "description" : "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "icon" : "/images/logo-white-1.png"
     },
     {
       "name" : "OneAgency",
       "tag_name" : "@oneagency",
       "date" : "18 March 2021",
-      "description" : "This is some test information, we hope you have",
-      "icon" : "/images/twitter-icon.jpg"
+      "description" : "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "icon" : "/images/logo-white-1.png"
     }
   ]
 }

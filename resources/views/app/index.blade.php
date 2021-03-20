@@ -77,15 +77,7 @@
                         Lorem Ipsum.
                     </p>
                     <h2 class="text-uppercase">Twitter Feed</h2>
-                    <div class="twitter-feed-container">
-                        <div class="twitter-feed-item">
-                            <div class="twitter-image"></div>
-                            <div class="twitter-content">
-                                <div class="title"></div>
-                                <div class="description"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="twitter-feed-container"></div>
                 </div>
                 <div class="col-sm-6">
                     <h2 class="text-center text-uppercase">Get In Touch</h2>
@@ -111,4 +103,22 @@
         </div>
     </div>
     <!-- End Keep Connected -->
+
+    <div class="d-none">
+        <div id="twitter-feed-item-template" class="twitter-feed-item">
+            <div class="twitter-image-item-container">
+                <div class="twitter-image-item"><img src="" alt=""></div>
+            </div>
+            <div class="twitter-content-item">
+                <div class="twitter-content-container">
+                    <div class="twitter-name-tag-name-item">
+                        <div class="twitter-name-item"></div>
+                        <div class="twitter-tag-name-item"></div>
+                    </div>
+                    <div class="twitter-date-item"></div>
+                </div>
+                <div class="twitter-description-item"></div>
+            </div>
+        </div>
+    </div>
 @endsection
