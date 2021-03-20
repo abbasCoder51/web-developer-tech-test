@@ -7,8 +7,11 @@
 
         <title>{{ env('APP_NAME') }} - @yield('title')</title>
 
+        <link rel="stylesheet" href="{{ asset("/vendor/bootstrap/css/bootstrap.min.css") }}">
         @stack('styles')
 
+        <script type="text/javascript" src="{{ asset("/vendor/jquery/jquery.min.js") }}"></script>
+        <script type="text/javascript" src="{{ asset("/vendor/bootstrap/js/bootstrap.min.js") }}"></script>
         @stack('scripts_top')
     </head>
     <body class="@yield('page_class')">
