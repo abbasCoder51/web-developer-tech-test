@@ -1,4 +1,11 @@
 .featured-talent {
   background-color: #333333;
   color: #fff;
+
+  .featured-talent-item {
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+  }
 }
