@@ -14,3 +14,5 @@ const mix = require('laravel-mix');
 mix.copyDirectory("node_modules/bootstrap/dist", "public/vendor/bootstrap");
 mix.copyDirectory("node_modules/@fortawesome/fontawesome-free", "public/vendor/fontawesome-free");
 mix.copyDirectory("node_modules/jquery/dist", "public/vendor/jquery");
+
+mix.sass("resources/sass/style.scss", "public/css").version();
