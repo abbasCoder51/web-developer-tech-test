@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <title>{{ env('APP_NAME') }} - @yield('title')</title>
 
         <link rel="stylesheet" href="{{ asset("/vendor/bootstrap/css/bootstrap.min.css") }}">
