@@ -100,7 +100,7 @@ class FeaturedTalentController extends Controller
 
             Storage::disk('public_folder')->delete($featuredTalent->image);
 
-            $data['image_path'] = $imagePath;
+            $data['image'] = $imagePath;
         }
 
         $featuredTalent->update($data);

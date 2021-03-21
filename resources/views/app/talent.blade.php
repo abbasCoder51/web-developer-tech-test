@@ -80,7 +80,7 @@
                     @forelse($featuredTalents as $talent)
                         <div class="featured-talent-item">
                             <div class="featured-talent-image">
-                                <img src="{{ asset('images/featured-talent-1.jpg') }}">
+                                <img src="{{ asset($talent->image) }}">
                             </div>
                             <div class="featured-talent-content">
                                 <h1 class="featured-talent-title">{{ $talent->name }}</h1>
