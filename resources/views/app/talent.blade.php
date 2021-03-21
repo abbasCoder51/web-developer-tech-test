@@ -77,90 +77,22 @@
             </div>
             <div class="row pt-5">
                 <div class="col-sm-10 offset-sm-1">
-                    <div class="featured-talent-item">
-                        <div class="featured-talent-image">
-                            <img src="{{ asset('images/featured-talent-1.jpg') }}">
+                    @forelse($featuredTalents as $talent)
+                        <div class="featured-talent-item">
+                            <div class="featured-talent-image">
+                                <img src="{{ asset('images/featured-talent-1.jpg') }}">
+                            </div>
+                            <div class="featured-talent-content">
+                                <h1 class="featured-talent-title">{{ $talent->name }}</h1>
+                                <p class="featured-talent-description">
+                                    {{ $talent->description }}
+                                </p>
+                                <a class="featured-talent-url-link" href="{{ $talent->url_link }}">Read More ></a>
+                            </div>
                         </div>
-                        <div class="featured-talent-content">
-                            <h1 class="featured-talent-title">Lorem Ipsum</h1>
-                            <p class="featured-talent-description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                            <a class="featured-talent-url-link">Read More ></a>
-                        </div>
-                    </div>
-                    <div class="featured-talent-item">
-                        <div class="featured-talent-image">
-                            <img src="{{ asset('images/featured-talent-2.jpg') }}">
-                        </div>
-                        <div class="featured-talent-content">
-                            <h1 class="featured-talent-title">Lorem Ipsum</h1>
-                            <p class="featured-talent-description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                            <a class="featured-talent-url-link">Read More ></a>
-                        </div>
-                    </div>
-                    <div class="featured-talent-item">
-                        <div class="featured-talent-image">
-                            <img src="{{ asset('images/featured-talent-3.jpg') }}">
-                        </div>
-                        <div class="featured-talent-content">
-                            <h1 class="featured-talent-title">Lorem Ipsum</h1>
-                            <p class="featured-talent-description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                            <a class="featured-talent-url-link">Read More ></a>
-                        </div>
-                    </div>
-                    <div class="featured-talent-item">
-                        <div class="featured-talent-image">
-                            <img src="{{ asset('images/featured-talent-4.jpg') }}">
-                        </div>
-                        <div class="featured-talent-content">
-                            <h1 class="featured-talent-title">Lorem Ipsum</h1>
-                            <p class="featured-talent-description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                            <a class="featured-talent-url-link">Read More ></a>
-                        </div>
-                    </div>
-                    <div class="featured-talent-item">
-                        <div class="featured-talent-image">
-                            <img src="{{ asset('images/featured-talent-5.jpg') }}">
-                        </div>
-                        <div class="featured-talent-content">
-                            <h1 class="featured-talent-title">Lorem Ipsum</h1>
-                            <p class="featured-talent-description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                            <a class="featured-talent-url-link">Read More ></a>
-                        </div>
-                    </div>
-                    <div class="featured-talent-item">
-                        <div class="featured-talent-image">
-                            <img src="{{ asset('images/featured-talent-6.jpg') }}">
-                        </div>
-                        <div class="featured-talent-content">
-                            <h1 class="featured-talent-title">Lorem Ipsum</h1>
-                            <p class="featured-talent-description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                            <a class="featured-talent-url-link">Read More ></a>
-                        </div>
-                    </div>
+                    @empty
+                        <div class="text-center">No Results</div>
+                    @endforelse
                 </div>
             </div>
         </div>
