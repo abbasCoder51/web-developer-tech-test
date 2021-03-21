@@ -108,4 +108,24 @@ class FeaturedTalentController extends Controller
         return redirect()->route('admin.featured-talents.index')
             ->with('success', sprintf("%s - has been updated", $featuredTalent->name));
     }
+
+    /**
+     * @param FeaturedTalent $featuredTalent
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function show(FeaturedTalent $featuredTalent)
+    {
+        return view('admin.featured-talent.show')
+            ->with('featuredTalent', $featuredTalent);
+    }
+
+    public function destroy(FeaturedTalent $featuredTalent)
+    {
+        $featuredTalent->delete();
+
+        Storage::disk('public_folder')->delete($featuredTalent->image);
+
+        return redirect()->route('admin.featured-talents.index')
+            ->with('success', sprintf("%s - has been deleted", $featuredTalent->name));
+    }
 }

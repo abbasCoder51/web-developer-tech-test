@@ -32,6 +32,7 @@
                                     <th>Employment Type</th>
                                     <th>Skill</th>
                                     <th>Years Experience</th>
+                                    <th>Actions</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -43,6 +44,14 @@
                                             <td>{{ $talent->employment_type }}</td>
                                             <td>{{ $talent->skill }}</td>
                                             <td>{{ $talent->years_experience }}</td>
+                                            <td>
+                                                <a href="{{ route('admin.featured-talents.edit', $talent->id) }}" class="btn btn-primary">Edit</a>
+                                                <form action="{{ route('admin.featured-talents.destroy', $talent->id) }}" method="POST" class="d-inline">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                                </form>
+                                            </td>
                                         </tr>
                                     @empty
                                         <tr>
