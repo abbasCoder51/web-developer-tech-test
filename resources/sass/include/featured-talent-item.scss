@@ -1,0 +1,12 @@
+.featured-talent-item {
+  display: flex;
+  margin-bottom: 25px;
+
+  .featured-talent-image img {
+    width: 230px;
+  }
+
+  .featured-talent-content {
+    padding: 0 20px;
+  }
+}
