@@ -3,5 +3,5 @@
 use Illuminate\Support\Facades\Route;
 
 Route::namespace('Admin')->group(function() {
-    Route::resource('featured-talent', 'FeaturedTalentController');
+    Route::resource('featured-talents', 'FeaturedTalentController');
 });
