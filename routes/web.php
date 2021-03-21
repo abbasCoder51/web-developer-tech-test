@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::namespace('App')->group(function() {
-    Route::get('/', 'PageController@index');
+    Route::get('/', 'PageController@index')->name('home');
+    Route::get('/talent', 'PageController@talent')->name('talent');
 });

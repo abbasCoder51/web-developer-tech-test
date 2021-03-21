@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <a href="#" class="btn btn-normal text-uppercase">View All</a>
+                        <a href="{{ route('talent') }}" class="btn btn-normal text-uppercase">View All</a>
                     </div>
                 </div>
             </div>

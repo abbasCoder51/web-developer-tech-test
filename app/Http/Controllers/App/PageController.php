@@ -10,4 +10,9 @@ class PageController extends Controller
     {
         return view('app.index');
     }
+
+    public function talent()
+    {
+        return view('app.talent');
+    }
 }
