@@ -38,6 +38,9 @@
                                         <div class="form-group">
                                             <select class="form-control" name="location">
                                                 <option value="">Location</option>
+                                                @foreach($locations as $name)
+                                                    <option value="{{ $name }}">{{ $name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -45,6 +48,9 @@
                                         <div class="form-group">
                                             <select class="form-control" name="job_category">
                                                 <option value="">Role</option>
+                                                @foreach($jobCategories as $name)
+                                                    <option value="{{ $name }}">{{ $name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -52,6 +58,9 @@
                                         <div class="form-group">
                                             <select class="form-control" name="employment_type">
                                                 <option value="">Employment Type</option>
+                                                @foreach($employmentTypes as $name)
+                                                    <option value="{{ $name }}">{{ $name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -59,6 +68,9 @@
                                         <div class="form-group">
                                             <select class="form-control" name="skill">
                                                 <option value="">Skill</option>
+                                                @foreach($skills as $name)
+                                                    <option value="{{ $name }}">{{ $name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -66,6 +78,11 @@
                                         <div class="form-group">
                                             <select class="form-control" name="years_experience">
                                                 <option value="">Years Experience</option>
+                                                <option value="1">1+</option>
+                                                <option value="1">2+</option>
+                                                <option value="1">3+</option>
+                                                <option value="1">4+</option>
+                                                <option value="1">5+</option>
                                             </select>
                                         </div>
                                     </div>

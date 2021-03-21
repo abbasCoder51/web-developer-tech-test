@@ -15,8 +15,16 @@ class PageController extends Controller
     public function talent()
     {
         $featuredTalents = FeaturedTalent::query()->get();
+        $locations = $featuredTalents->unique('location')->pluck('location');
+        $jobCategories = $featuredTalents->unique('job_category')->pluck('job_category');
+        $employmentTypes = $featuredTalents->unique('employment_type')->pluck('employment_type');
+        $skills = $featuredTalents->unique('skill')->pluck('skill');
 
         return view('app.talent')
-            ->with('featuredTalents', $featuredTalents);
+            ->with('featuredTalents', $featuredTalents)
+            ->with('locations', $locations)
+            ->with('jobCategories', $jobCategories)
+            ->with('employmentTypes', $employmentTypes)
+            ->with('skills', $skills);
     }
 }
