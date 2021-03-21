@@ -1,0 +1,21 @@
+.featured-talent-content {
+  .search-filter-title {
+    display: flex;
+    align-self: center;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .featured-talent-search-container {
+    @media screen and (max-width: 767px){
+      max-width: 100%;
+      flex: 0 0 auto;
+      margin: 0;
+    }
+
+    .featured-talent-form {
+      label {
+        font-size: 14px;
+      }
+    }
+  }
+}
