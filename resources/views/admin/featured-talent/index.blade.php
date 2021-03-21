@@ -1,15 +1,17 @@
 @extends('layouts.admin')
 
-@section('title', 'Featured Talent')
+@section('title', 'Featured Talents')
 
 @section('body_content')
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-4">
-        <h1 class="h3 mb-0 text-gray-800">Featured Talent</h1>
+        <h1 class="h3 mb-0 text-gray-800">Featured Talents</h1>
         <a href="{{ route('admin.featured-talents.create') }}"
            class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
             <i class="fas fa-download fa-sm text-white-50"></i> Create Featured Talent</a>
     </div>
+
+    @include('admin.partials.results')
 
     <div class="card shadow mb-4">
         <div class="card-header py-3">

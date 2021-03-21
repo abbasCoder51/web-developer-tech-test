@@ -16,7 +16,9 @@ class CreateFeaturedTalentsTable extends Migration
         Schema::create('featured_talents', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('image');
+            $table->text('description');
+            $table->string('url_link');
+            $table->text('image');
             $table->string('location');
             $table->string('job_category');
             $table->string('employment_type');
@@ -33,6 +35,6 @@ class CreateFeaturedTalentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('featured_talent');
+        Schema::dropIfExists('featured_talents');
     }
 }
