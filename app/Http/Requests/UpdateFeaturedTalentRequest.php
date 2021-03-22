@@ -27,11 +27,11 @@ class UpdateFeaturedTalentRequest extends FormRequest
             'name' => 'required',
             'description' => 'required',
             'url_link' => 'required',
-            'image' => 'required',
             'location' => 'required',
             'job_category' => 'required',
             'employment_type' => 'required',
-            'skill' => 'required'
+            'skill' => 'required',
+            'years_experience' => 'required|integer'
         ];
     }
 }
