@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="row pt-5">
-                <div id="featured-talent-container" class="col-sm-10 offset-sm-1">
+                <div id="featured-talent-container" class="col-sm-12">
                     @forelse($featuredTalents as $talent)
                         <div class="featured-talent-item">
                             <div class="featured-talent-image">
