@@ -15,4 +15,59 @@ class SectionController extends Controller
         return view('admin.section.index')
             ->with('sections', $sections);
     }
+
+    public function create()
+    {
+        return view('admin.section.create');
+    }
+
+    public function store(Request $request)
+    {
+        $data = [
+            'title' => $request->get('title'),
+            'description' => $request->get('description'),
+            'url_link' => $request->get('url_link'),
+            'slug' => $request->get('slug')
+        ];
+
+        $section = Section::query()->create($data);
+
+        return redirect()->route('admin.sections.index')
+            ->with('success', "Section has been created");
+    }
+
+    public function edit(Section $section)
+    {
+        return view('admin.section.edit')
+            ->with('section', $section);
+    }
+
+    public function update(Request $request, Section $section)
+    {
+        $data = [
+            'title' => $request->get('title'),
+            'description' => $request->get('description'),
+            'url_link' => $request->get('url_link'),
+            'slug' => $request->get('slug')
+        ];
+
+        $section->update($data);
+
+        return redirect()->route('admin.sections.index')
+            ->with('success', "Section has been updated");
+    }
+
+    public function show(Section $section)
+    {
+        return view('admin.section.show')
+            ->with('section', $section);
+    }
+
+    public function destroy(Section $section)
+    {
+        $section->delete();
+
+        return redirect()->route('admin.sections.index')
+            ->with('success', "Section has been deleted");
+    }
 }
