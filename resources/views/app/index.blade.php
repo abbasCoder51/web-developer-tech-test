@@ -23,40 +23,31 @@
     </div>
     <!-- End Hero Content -->
 
-    <!-- Begin Featured Talent -->
-    <div class="featured-talent">
-        <div class="container pt-5 pb-5">
-            <div class="row">
-                <div class="col-sm-10 offset-sm-1">
-                    <h1 class="text-center text-uppercase text-uppercase mb-5">Featured Talent</h1>
-                    <div class="row">
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="featured-talent-item"></div>
+    @if(count($featuredTalents))
+        <!-- Begin Featured Talent -->
+        <div class="featured-talent">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1">
+                        <h1 class="text-center text-uppercase text-uppercase mb-5">Featured Talent</h1>
+                        <div class="row d-flex justify-content-center">
+                            @foreach($featuredTalents as $featuredTalent)
+                                <div class="col-lg-2 col-6">
+                                    <div class="featured-talent-item" style="background-image: url({{ $featuredTalent->image }})"></div>
+                                    <h3 class="d-block d-sm-none text-center pb-2">{{ $featuredTalent->name }}</h3>
+                                    <a href="{{ $featuredTalent->url_link }}" class="btn btn-normal text-uppercase d-block d-sm-none mb-4">Read More</a>
+                                </div>
+                            @endforeach
                         </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="featured-talent-item"></div>
+                        <div class="text-center mt-5">
+                            <a href="{{ route('talent') }}" class="btn btn-normal text-uppercase">View All</a>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="featured-talent-item"></div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="featured-talent-item"></div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="featured-talent-item"></div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="featured-talent-item"></div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-5">
-                        <a href="{{ route('talent') }}" class="btn btn-normal text-uppercase">View All</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Featured Talent -->
+        <!-- End Featured Talent -->
+    @endif
 
     <!-- Begin Keep Connected -->
     <div class="keep-connected">
