@@ -53,15 +53,17 @@
     <div class="keep-connected">
         <div class="container pt-5 pb-5">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     @if($sectionHomeConnected)
                         <h2 class="text-uppercase">{{ $sectionHomeConnected->title }}</h2>
                         <p>{{ $sectionHomeConnected->description }}</p>
                     @endif
-                    <h2 class="text-uppercase">Twitter Feed</h2>
-                    <div id="twitter-feed-container"></div>
+                    <div class="twitter-feed-block">
+                        <h2 class="text-uppercase">Twitter Feed</h2>
+                        <div id="twitter-feed-container"></div>
+                    </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <h2 class="text-center text-uppercase">Get In Touch</h2>
                     <form action="#">
                         <div class="form-group">

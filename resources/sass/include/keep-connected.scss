@@ -1,3 +1,9 @@
 .keep-connected {
   background-color: #f6f6f6 !important;
+
+  @media screen and (max-width: 767px) {
+    .twitter-feed-block {
+      margin: 45px 0;
+    }
+  }
 }
