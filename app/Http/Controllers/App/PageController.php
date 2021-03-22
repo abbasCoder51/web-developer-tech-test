@@ -13,7 +13,7 @@ class PageController extends Controller
     {
         $sectionHomeHero = Section::query()->where('slug', 'home-hero')->first();
         $sectionHomeConnected = Section::query()->where('slug', 'home-connected')->first();
-        $featuredTalents = FeaturedTalent::query()->get();
+        $featuredTalents = FeaturedTalent::query()->limit(5)->get();
 
         return view('app.index')
             ->with('featuredTalents', $featuredTalents)
