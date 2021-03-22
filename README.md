@@ -8,6 +8,30 @@ http://oneagency.onlinewebspace.co.uk/talent
 http://oneagency.onlinewebspace.co.uk/admin/sections
 http://oneagency.onlinewebspace.co.uk/admin/featured-talents
 
+## Getting Started
+copy .env.example to .env
+run composer install
+run npm install && npm run dev
+run php artisan key:generate
+
+Setup Database values in .env file
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=
+DB_USERNAME=root
+DB_PASSWORD=
+
+run php artisan migrate
+
+## Creating Sections
+http://oneagency.onlinewebspace.co.uk/admin/sections
+
+Create sections with the slug values
+- home-hero
+- talent-hero
+- home-connected
+
 ### One Agency Media
 
 The purpose of this tech test is not only to test the applicants web development abilities with a simple mockup, but to also anyalyse their approach to web development.
