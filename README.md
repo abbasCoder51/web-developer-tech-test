@@ -1,5 +1,13 @@
 # Web Developer Tech Test 
 
+## Web Link
+http://oneagency.onlinewebspace.co.uk/
+http://oneagency.onlinewebspace.co.uk/talent
+
+###Admin
+http://oneagency.onlinewebspace.co.uk/admin/sections
+http://oneagency.onlinewebspace.co.uk/admin/featured-talents
+
 ### One Agency Media
 
 The purpose of this tech test is not only to test the applicants web development abilities with a simple mockup, but to also anyalyse their approach to web development.
