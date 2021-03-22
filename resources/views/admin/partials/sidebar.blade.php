@@ -17,11 +17,27 @@
         Featured Talent
     </div>
 
-    <!-- Nav Item - Utilities Collapse Menu -->
+    <!-- Nav Item -->
     <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.featured-talents.index') }}">
             <i class="fas fa-fw fa-wrench"></i>
             <span>Featured Talent</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Section
+    </div>
+
+    <!-- Nav Item -->
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('admin.sections.index') }}">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Sections</span>
         </a>
     </li>
 
