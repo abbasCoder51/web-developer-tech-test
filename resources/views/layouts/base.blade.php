@@ -7,7 +7,7 @@
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ env('APP_NAME') }} - @yield('title')</title>
+        <title>{{ env('APP_NAME') }} - @yield('title', 'Home')</title>
 
         <link rel="stylesheet" href="{{ asset("/vendor/bootstrap/css/bootstrap.min.css") }}">
         @stack('styles')

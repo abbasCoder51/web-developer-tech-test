@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Talent')
+
 @section('body_content')
     <!-- Begin Featured Talent Content -->
     <div class="featured-talent-hero-content">
@@ -100,7 +102,7 @@
                                 <img src="{{ asset($talent->image) }}">
                             </div>
                             <div class="featured-talent-content">
-                                <h1 class="featured-talent-title">{{ $talent->name }}</h1>
+                                <h3 class="featured-talent-title">{{ $talent->name }}</h3>
                                 <p class="featured-talent-description">
                                     {{ $talent->description }}
                                 </p>
