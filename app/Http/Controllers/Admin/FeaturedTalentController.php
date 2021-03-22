@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateFeaturedTalentRequest;
+use App\Http\Requests\UpdateFeaturedTalentRequest;
 use App\Models\Admin\FeaturedTalent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -32,7 +34,7 @@ class FeaturedTalentController extends Controller
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(Request $request)
+    public function store(CreateFeaturedTalentRequest $request)
     {
         $data = [
             'name' => $request->get('name'),
@@ -77,7 +79,7 @@ class FeaturedTalentController extends Controller
      * @param FeaturedTalent $featuredTalent
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, FeaturedTalent $featuredTalent)
+    public function update(UpdateFeaturedTalentRequest $request, FeaturedTalent $featuredTalent)
     {
         $data = [
             'name' => $request->get('name'),

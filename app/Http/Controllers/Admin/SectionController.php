@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateSectionRequest;
 use App\Models\Admin\Section;
 use Illuminate\Http\Request;
 
@@ -21,7 +22,7 @@ class SectionController extends Controller
         return view('admin.section.create');
     }
 
-    public function store(Request $request)
+    public function store(CreateSectionRequest $request)
     {
         $data = [
             'title' => $request->get('title'),
@@ -42,7 +43,7 @@ class SectionController extends Controller
             ->with('section', $section);
     }
 
-    public function update(Request $request, Section $section)
+    public function update(CreateSectionRequest $request, Section $section)
     {
         $data = [
             'title' => $request->get('title'),
