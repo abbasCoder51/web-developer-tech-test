@@ -110,6 +110,11 @@ footer ul li a, footer ul li a:hover {
 .featured-talent-item .featured-talent-image img {
   width: 230px;
 }
+@media screen and (max-width: 767px) {
+  .featured-talent-item .featured-talent-image img {
+    width: 160px;
+  }
+}
 .featured-talent-item .featured-talent-content {
   padding: 0 20px;
 }

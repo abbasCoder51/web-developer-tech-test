@@ -4,6 +4,10 @@
 
   .featured-talent-image img {
     width: 230px;
+
+    @media screen and (max-width: 767px) {
+      width: 160px;
+    }
   }
 
   .featured-talent-content {
