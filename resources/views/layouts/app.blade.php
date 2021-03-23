@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @push("styles")
-    <link rel="stylesheet" href="{{ mix("css/style.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/style.css") }}">
 @endpush
 
 @section('body')
